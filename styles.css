@@ -1,0 +1,85 @@
+input[type="text"] {
+    background-color: yellow;
+}
+
+body {
+    background-color: azure;
+}
+
+@font-face {
+    src: url("/assets/fonts/BigShouldersDisplay-SemiBold.ttf");
+    font-family: header;
+}
+
+@font-face {
+    src: url("/assets/fonts/BigShouldersDisplay-Light.ttf");
+    font-family: h2;
+}
+
+@font-face {
+    src: url("/assets/fonts/BigShouldersDisplay-Thin.ttf");
+    font-family: p;
+}
+
+h1 {
+    font-family: header;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+h2 {
+    text-shadow: 10px 10px 10px black;
+    font-family: h2;
+    font-size: 30px;
+}
+
+h2:hover {
+    animation: anton_rotate 3s infinite linear;
+}
+
+p,
+a {
+    font-family: p;
+    font-size: 30px;
+}
+
+a {
+    font-weight: bold;
+}
+
+a:visited {
+    color: brown;
+}
+
+a:active {
+    color: darkgreen;
+}
+
+.main_pic {
+    border: 1px;
+    border-radius: 30px;
+    /* box-shadow: 10px 10px 10px 30px lightcyan; */
+    display: inline-block;
+    margin: 50px;
+}
+
+.main_p {
+    display: inline-block;
+    align: middle;
+    margin: 50px;
+    position: relative;
+}
+
+.p_story {
+    border: black solid;
+    text-align: center;
+}
+
+@keyframes anton_rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

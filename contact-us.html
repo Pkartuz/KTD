@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>KTP - Contact Us</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body bgcolor="lightblue">
+
+    <center>
+        <h1>Kitchen Tools Department</h1>
+    </center>
+    <hr>
+    <br> <br>
+    <center>
+        <a href="/index.html">Home</a> |
+        <a href="/products.html">Products</a> |
+        <a href="/contact-us.html">Contact Us</a>
+        <br><br><br>
+        <h2>Contact Us</h2>
+        <h3>Let us know</h3>
+        <form action="/save.html" method="POST">
+            <table border="0">
+                <tr>
+                    <td>First Name</td>
+                    <td><input type="text" name="firstName"> </td>
+                </tr>
+                <tr>
+                    <td>Last Name</td>
+                    <td><input type="text" name="lastName"> </td>
+                </tr>
+                <tr>
+                    <td>Gender</td>
+                    <td><input type="radio" name="gender" value="male"><label for="male">Male</label>
+                        <br> <input type="radio" name="gender" value="female"><label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        City
+                    </td>
+                    <td><select name="option">
+                            <option value="Select City" selected></option>
+                            <option value="TA">Tel Aviv</option> <!-- value attribute will be sent-->
+                            <option value="HF">Haifa</option>
+                            <option value="BS">Beer Sheva</option>
+
+
+                        </select></td>
+                </tr>
+
+            </table>
+            <button>Send</button>
+            <input type="reset" value="Clear">
+        </form>
+    </center>
+</body>
+
+</html>
